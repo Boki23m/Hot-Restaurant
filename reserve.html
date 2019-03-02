@@ -80,8 +80,9 @@
         customerID: $('#resID').val().trim()
       };
 
-      $.post(currentURL + "/api/tables", newResivation,
-        function (data) {
+      $.post(currentURL + "/api/reservations", newReservation,
+	    function(data){
+
 
           // If a table is available... tell user they are booked.
           if (data == true) {
