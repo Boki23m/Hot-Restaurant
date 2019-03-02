@@ -73,13 +73,15 @@ app.get("/", function(req, res) {
     // This works because of our body parsing middleware
     var newReservation = req.body;
   
+    console.log(req.body);
+
     // Using a RegEx Pattern to remove spaces from newReservation
     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-    newReservation.routeName = newReservation.name.replace(/\s+/g, "").toLowerCase();
+    // newReservation.routeName = newReservation.customerName.replace(/\s+/g, "").toLowerCase();
   
     console.log(newReservation);
 
-    if (reservations.length <= 5){
+    if (reservations.length < 5){
         reservations.push(newReservation);
         res.json(newReservation);
         console.log(reservations);
