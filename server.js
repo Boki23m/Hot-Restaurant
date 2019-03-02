@@ -16,9 +16,7 @@ app.use(express.json());
 // =============================================================
 var reservations = [
     {
-        firstName: "Marty",
-        lastName: "McFly",
-        phoneNumber: "858-550-1241"
+      
     }
 ];
 
@@ -85,7 +83,7 @@ app.get("/", function(req, res) {
         reservations.push(newReservation);
         res.json(newReservation);
         console.log(reservations);
-    }
+    } 
 
     else {
         waitList.push(newReservation);
