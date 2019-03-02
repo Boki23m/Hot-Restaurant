@@ -19,29 +19,42 @@
       <hr>
       <h3>We only have 5 tables! Book your seat before they all are gone!</h3>
       <hr>
-      <a href="/view"><button class="btn btn-danger btn-lg"><span class="fa fa-table"></span> View Tables</button></a>
-      <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Make
+
+      <a href="/reserve"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Make
           Reservation</button></a>
+      <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-home"></span></button></a>
     </div>
-  </div>
-  <div class="row">
 
-    <div class="col-12">
+    <div class="row">
 
-      <div class="card container">
-        <div class="card-header">
-          <h3>Current Reservations</h3>
+      <div class="col-12">
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Current Reservations</h3>
+          </div>
+          <div class="card-body">
+            <h2>
+              <span class="label label-primary">1</span>
+              |
+            </h2>
+          </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Waiting List</h3>
+          </div>
+          <div class="card-body">
+            <h2>
+              <span class="label label-primary">1</span>
+              |
+            </h2>
+
+          </div>
         </div>
-        <div class="card-body">
-          <h2>
-            <span class="label label-primary">1</span>
-            |
-          </h2>
 
-        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <script type="text/javascript">
@@ -70,6 +83,12 @@
       });
     });
   </script>
+
+  <style>
+    .jumbotron {
+      text-align: center
+    }
+  </style>
 
 </body>
 
