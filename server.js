@@ -15,9 +15,7 @@ app.use(express.json());
 // Hot Restaurant (DATA) / Objects
 // =============================================================
 var reservations = [
-    {
-      
-    }
+
 ];
 
 console.log(reservations.length);
