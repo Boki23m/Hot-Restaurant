@@ -1,3 +1,9 @@
-# HotRestaurant
+# Hot Restaurant
 
-* Description: Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
+Full-stack site to hold the reservation and waiting list for a restaurant.
+
+Built with Node, Express to handle the routing and jQuery.
+
+Deployed on Heroku. Check it out [here](https://young-hamlet-99487.herokuapp.com/).
+
+![screenshot](/Capture.JPG)
